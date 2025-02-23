@@ -4,7 +4,7 @@ import pandas as pd
 import os
 from io import BytesIO
 
-st.set_page_config(page_title == "data sweeper", layout= "wide")
+st.set_page_config(page_title = "data sweeper", layout= "wide")
 
 
 # Custom Css...
