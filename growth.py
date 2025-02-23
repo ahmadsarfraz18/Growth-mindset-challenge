@@ -89,7 +89,7 @@ if st.button (f"Conver {file.name}"):
         mime_type = "text/csv"
 
     elif conversion_type == "Excel":
-        df.to.to_excel (buffer, index = False)
+        df.to_excel (buffer, index = False)
         file_name = file.name.replace (file_ext, ".xlsx")
         mime_type = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         buffer.seek(0)
