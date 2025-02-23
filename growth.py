@@ -64,7 +64,7 @@ if Uploaded_files:
 
         with col2: 
             if st.button (f"Fill missing vaules for {file.name}"):
-                numeric_col = df.select_dtypes(includes= ['number']).columns
+                numeric_col = df.select_dtypes(include= ['number']).columns
                 df[numberic_col] = df[numeric_col].fillna (df[numeric_cols].mean())
                 st.write ("✅ Missing values have been filled !")
     st.subheader ("💟 Select columns to keep")
